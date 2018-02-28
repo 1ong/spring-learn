@@ -8,7 +8,7 @@
     <bean class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
         <property name="locations">
             <list>
-                <value>classpath:config.properties</value>
+                <value>classpath:user.properties</value>
             </list>
         </property>
     </bean>

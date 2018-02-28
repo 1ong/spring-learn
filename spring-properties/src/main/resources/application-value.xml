@@ -7,6 +7,15 @@
     <!-- 开启注解扫描 -->
     <context:component-scan base-package="com.learn.spring.properties"/>
 
+    <!-- 属性值读取替换占位符 -->
+    <bean class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:lesson.properties</value>
+            </list>
+        </property>
+    </bean>
+
     <bean id="lessonInfo" class="com.learn.spring.properties.entity.LessonInfo"/>
 
 </beans>
