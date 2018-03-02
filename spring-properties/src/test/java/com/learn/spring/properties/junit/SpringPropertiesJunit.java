@@ -1,7 +1,7 @@
-package com.learn.spring.properties;
+package com.learn.spring.properties.junit;
 
-import com.learn.spring.properties.configuration.PropertiesConfiguration;
 import com.learn.spring.properties.entity.LessonInfo;
+import com.learn.spring.properties.configuration.PropertiesConfiguration;
 import com.learn.spring.properties.entity.UserInfo;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
