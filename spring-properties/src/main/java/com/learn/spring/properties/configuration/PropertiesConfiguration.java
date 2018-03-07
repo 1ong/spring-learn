@@ -21,6 +21,10 @@ public class PropertiesConfiguration {
     @Value("${user.age}")
     private int age;
 
+    public PropertiesConfiguration() {
+        System.out.println("PropertiesConfiguration instacne create");
+    }
+
     @Bean
     public UserInfo userInfo() {
         UserInfo userInfo = new UserInfo();
@@ -34,7 +38,8 @@ public class PropertiesConfiguration {
      * @return PropertySourcesPlaceholderConfigurer
      */
     @Bean
-    public PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer() {
+    public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer() {
+        System.out.println("PropertySourcesPlaceholderConfigurer start instance");
         PropertySourcesPlaceholderConfigurer configurer = new PropertySourcesPlaceholderConfigurer();
         Resource resource = new ClassPathResource("user.properties");
         configurer.setLocation(resource);
