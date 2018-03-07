@@ -34,7 +34,7 @@ public class PropertiesConfiguration {
      * @return PropertySourcesPlaceholderConfigurer
      */
     @Bean
-    public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer() {
+    public PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer() {
         PropertySourcesPlaceholderConfigurer configurer = new PropertySourcesPlaceholderConfigurer();
         Resource resource = new ClassPathResource("user.properties");
         configurer.setLocation(resource);

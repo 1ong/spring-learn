@@ -13,6 +13,9 @@ public class BeanFactoryPostProcessorConfiguration {
 
     private int age;
 
+    /**
+     * 先于BFPP初始化
+     */
     public BeanFactoryPostProcessorConfiguration() {
         System.out.println("BeanFactoryPostProcessorConfiguration instance create");
     }
