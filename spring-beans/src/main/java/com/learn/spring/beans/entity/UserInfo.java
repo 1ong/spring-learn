@@ -15,6 +15,10 @@ public class UserInfo {
      */
     private int age;
 
+    public UserInfo() {
+        //若BeanFactoryPostProcessor实现没有提前初始化,则在其执行完成后才会初始化
+        System.out.println("UserInfo instance create");
+    }
 
     public void setName(String name) {
         this.name = name;
