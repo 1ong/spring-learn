@@ -41,4 +41,12 @@ public class SpringBeanJunit {
     public void beanFactoryPostProcessorJunit() {
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(BeanFactoryPostProcessorConfiguration.class);
     }
+
+    /**
+     * Bean生命周期单元测试
+     */
+    @Test
+    public void beanLifeCycleJunit() {
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("application-lifecycle.xml");
+    }
 }
